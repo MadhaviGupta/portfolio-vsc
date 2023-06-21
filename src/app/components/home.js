@@ -9,17 +9,7 @@ export default function Home(props) {
         <div className="flex justify-start text-5xl tracking-tight m-2 font-mono w-full pt-40">
           <Typewriter
             onInit={(typewriter) => {
-              typewriter
-                .typeString("Hey there! I'm Madhavi.")
-                .callFunction(() => {
-                  console.log("String typed out!");
-                })
-                .pauseFor(2500)
-                .deleteAll()
-                // .callFunction(() => {
-                //   console.log("All strings were deleted");
-                // })
-                .start();
+              typewriter.typeString("Hey there! I'm Madhavi.").start();
             }}
           />
         </div>
@@ -56,7 +46,7 @@ export default function Home(props) {
           width={400}
           height={400}
           alt="main"
-          className="m-16"
+          className="m-16 absolute right-4"
         />
       </div>
     </div>

@@ -36,7 +36,7 @@ function LanguagesArr() {
 function FrameworksArr() {
   return (
     <div>
-      <ul className="text-lg list-disc">
+      <ul className="text-lg">
         <li className="flex">
           <MdPlayArrow className="m-1.5" />
           React.js
@@ -64,7 +64,7 @@ function FrameworksArr() {
 function ToolsArr() {
   return (
     <div>
-      <ul className="text-lg list-disc">
+      <ul className="text-lg">
         <li className="flex">
           <MdPlayArrow className="m-1.5" />
           Git & GitHub
@@ -120,7 +120,7 @@ const aboutContent = [
 export default function About() {
   return (
     <div>
-      <div className="flex font-mono tracking-tight flex-wrap">
+      <div className="flex flex-row font-mono tracking-tight flex-wrap">
         {aboutContent.map((data) => (
           <div className="flex flex-col items-center bg-[#121c2b] hover:shadow-xl shadow-white bg-opacity-90 rounded-lg w-1/4 p-6 m-4">
             <Image

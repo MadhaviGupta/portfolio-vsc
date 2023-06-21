@@ -4,7 +4,7 @@ import { VscInfo } from "react-icons/vsc";
 import { DiJavascript1 } from "react-icons/di";
 export default function Explorer(props) {
   return (
-    <div className="flex flex-col bg-[#121c2b] w-60">
+    <div className="flex flex-col bg-[#121c2b] w-60 min-w-80">
       <div className="justify-between pr-10 p-3">
         <div className="tracking-wider text-lg">EXPLORER</div>
         <div>
