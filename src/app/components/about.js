@@ -1,22 +1,34 @@
 import Image from "next/image";
-import education from "../images/education.png";
-import experience from "../images/experience.png";
-import languages from "../images/languages.png";
-import frameworks from "../images/frameworks.png";
-import tools from "../images/tools.png";
+import education from "../../../public/education.png";
+import experience from "../../../public/experience.png";
+import languages from "../../../public/languages.png";
+import frameworks from "../../../public/frameworks.png";
+import tools from "../../../public/tools.png";
 import { MdPlayArrow } from "react-icons/md";
 function LanguagesArr() {
   return (
     <div>
       <ul className="text-lg">
         <li className="flex">
-          <MdPlayArrow className="m-1.5"/>
+          <MdPlayArrow className="m-1.5" />
           HTML5
         </li>
-        <li className="flex"><MdPlayArrow className="m-1.5"/>CSS3</li>
-        <li className="flex"><MdPlayArrow className="m-1.5"/>JavaScript</li>
-        <li className="flex"><MdPlayArrow className="m-1.5"/>Java</li>
-        <li className="flex"><MdPlayArrow className="m-1.5"/>C++</li>
+        <li className="flex">
+          <MdPlayArrow className="m-1.5" />
+          CSS3
+        </li>
+        <li className="flex">
+          <MdPlayArrow className="m-1.5" />
+          JavaScript
+        </li>
+        <li className="flex">
+          <MdPlayArrow className="m-1.5" />
+          Java
+        </li>
+        <li className="flex">
+          <MdPlayArrow className="m-1.5" />
+          C++
+        </li>
       </ul>
     </div>
   );
@@ -25,11 +37,26 @@ function FrameworksArr() {
   return (
     <div>
       <ul className="text-lg list-disc">
-        <li className="flex"><MdPlayArrow className="m-1.5"/>React.js</li>
-        <li className="flex"><MdPlayArrow className="m-1.5"/>Next.js</li>
-        <li className="flex"><MdPlayArrow className="m-1.5"/>Tailwind CSS</li>
-        <li className="flex"><MdPlayArrow className="m-1.5"/>Material UI</li>
-        <li className="flex"><MdPlayArrow className="m-1.5"/>Bootstrap</li>
+        <li className="flex">
+          <MdPlayArrow className="m-1.5" />
+          React.js
+        </li>
+        <li className="flex">
+          <MdPlayArrow className="m-1.5" />
+          Next.js
+        </li>
+        <li className="flex">
+          <MdPlayArrow className="m-1.5" />
+          Tailwind CSS
+        </li>
+        <li className="flex">
+          <MdPlayArrow className="m-1.5" />
+          Material UI
+        </li>
+        <li className="flex">
+          <MdPlayArrow className="m-1.5" />
+          Bootstrap
+        </li>
       </ul>
     </div>
   );
@@ -38,10 +65,22 @@ function ToolsArr() {
   return (
     <div>
       <ul className="text-lg list-disc">
-        <li className="flex"><MdPlayArrow className="m-1.5"/>Git & GitHub</li>
-        <li className="flex"><MdPlayArrow className="m-1.5"/>Visual Studio Code</li>
-        <li className="flex"><MdPlayArrow className="m-1.5"/>IntelliJ IDEA</li>
-        <li className="flex"><MdPlayArrow className="m-1.5"/>Canva</li>
+        <li className="flex">
+          <MdPlayArrow className="m-1.5" />
+          Git & GitHub
+        </li>
+        <li className="flex">
+          <MdPlayArrow className="m-1.5" />
+          Visual Studio Code
+        </li>
+        <li className="flex">
+          <MdPlayArrow className="m-1.5" />
+          IntelliJ IDEA
+        </li>
+        <li className="flex">
+          <MdPlayArrow className="m-1.5" />
+          Canva
+        </li>
       </ul>
     </div>
   );
