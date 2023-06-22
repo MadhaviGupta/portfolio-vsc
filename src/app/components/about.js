@@ -122,12 +122,16 @@ export default function About() {
     <div>
       <div className="flex flex-row font-mono tracking-tight flex-wrap">
         {aboutContent.map((data) => (
-          <div className="flex flex-col items-center bg-[#121c2b] hover:shadow-xl shadow-white bg-opacity-90 rounded-lg w-1/4 p-6 m-4">
+          <div
+            key={data.id}
+            className="flex flex-col items-center bg-[#121c2b] hover:shadow-xl shadow-white bg-opacity-90 rounded-lg w-1/4 p-6 m-4"
+          >
             <Image
               src={data.img}
               width={160}
               height={160}
               className="bg-slate-200 rounded-lg"
+              alt="img"
             />
             <div className="font-bold text-xl m-4 mb-0">{data.name}</div>
             <hr className="border-1 w-full m-2" />
