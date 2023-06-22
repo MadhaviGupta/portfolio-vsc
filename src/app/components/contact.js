@@ -2,52 +2,55 @@ export default function Contact() {
   return (
     <div>
       <div className="font-mono text-lg tracking-wide">
-        &#123; <br /> <span className="ml-4">"name" : "Madhavi Gupta",</span>
+        &#123; <br />
+        <span className="ml-4">
+          &quot;name&quot; : &quot;Madhavi Gupta&quot;,
+        </span>
         <br />
         <span className="ml-4">
-          "email" : "
+          &quot;email&quot; : &quot;
           <a
             href="mailto:madhavigupta1225@gmail.com"
             className="hover:underline"
           >
             madhavigupta1225@gmail.com
           </a>
-          ",
+          &quot;,
         </span>
         <br />
-        <span className="ml-4">"socials" :</span> &#123;
+        <span className="ml-4">&quot;socials&quot; :</span> &#123;
         <br />
         <span className="ml-8">
-          "github" : "
+          &quot;github&quot; : &quot;
           <a
             href="https://www.github.com/MadhaviGupta"
             className="hover:underline"
           >
             MadhaviGupta
           </a>
-          ",
+          &quot;,
         </span>
         <br />
         <span className="ml-8">
-          "linkedin" : "
+          &quot;linkedin&quot; : &quot;
           <a
             href="https://www.linkedin.com/in/madhaviigupta/"
             className="hover:underline"
           >
             madhaviigupta
           </a>
-          ",
+          &quot;,
         </span>
         <br />
         <span className="ml-8">
-          "twitter" : "
+          &quot;twitter&quot; : &quot;
           <a
             href="https://twitter.com/madhavi_gupta1"
             className="hover:underline"
           >
             madhavi_gupta1
           </a>
-          "
+          &quot;
         </span>
         <br />
         &nbsp; &#125;
