@@ -4,7 +4,7 @@ import Explorer from "./components/explorer";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import { useState } from "react";
-export default function page() {
+export default function Page() {
   const [content, setContent] = useState("home");
 
   return (
