@@ -120,7 +120,7 @@ const aboutContent = [
 export default function About() {
   return (
     <div>
-      <div className="flex flex-row font-mono tracking-tight flex-wrap">
+      <div className="flex flex-row font-mono tracking-tight flex-wrap pl-80 pt-20">
         {aboutContent.map((data) => (
           <div
             key={data.id}

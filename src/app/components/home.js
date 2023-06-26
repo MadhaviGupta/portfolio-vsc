@@ -4,9 +4,9 @@ import main from "../../../public/main.png";
 import { BsArrowUpRight } from "react-icons/bs";
 export default function Home(props) {
   return (
-    <div className="flex">
-      <div className="pl-10">
-        <div className="flex justify-start text-5xl tracking-tight m-2 font-mono w-full pt-40">
+    <div className="flex w-full justify-between">
+      <div className="pl-80">
+        <div className="flex justify-start text-5xl tracking-tight m-2 font-mono w-full pt-56">
           <Typewriter
             onInit={(typewriter) => {
               typewriter.typeString("Hey there! I'm Madhavi.").start();
@@ -21,10 +21,10 @@ export default function Home(props) {
           <button
             className="border-2 border-white p-3 rounded-lg hover:bg-white hover:text-slate-900 hover:shadow-lg transition-all duration-500 ease-in-out"
             onClick={() => {
-              props.setContent("contact");
+              props.setContent("socials");
             }}
           >
-            Contact Me
+            socials Me
           </button>
           <button
             className="flex border-2 border-white p-3 rounded-lg hover:bg-white hover:text-slate-900 hover:shadow-lg transition-all duration-500 ease-in-out mx-5"
@@ -40,13 +40,13 @@ export default function Home(props) {
           </button>
         </div>
       </div>
-      <div>
+      <div className="w-4/12 flex justify-center">
         <Image
           src={main}
           width={400}
           height={400}
           alt="main"
-          className="m-16 absolute right-4"
+          className="w-9/12 mt-5 pt-20"
         />
       </div>
     </div>

@@ -4,13 +4,13 @@ import { VscInfo } from "react-icons/vsc";
 import { DiJavascript1 } from "react-icons/di";
 import Home from "./home";
 import About from "./about";
-import Contact from "./contact";
 import Work from "./work";
+import Socials from "./socials";
 export default function Hero(props) {
   return (
     <div>
-      <div>
-        <ul className="flex text-sm bg-[#121c2b]">
+      <div className="fixed top-8 left-80">
+        <ul className="flex text-sm bg-[#121c2b] -ml-4">
           <li
             className={`flex p-1.5 hover:cursor-pointer hover:bg-[#131922] ${
               props.content === "home"
@@ -62,7 +62,7 @@ export default function Hero(props) {
           </li>
           <li
             className={`flex p-1.5 hover:cursor-pointer hover:bg-[#131922] ${
-              props.content === "contact"
+              props.content === "socials"
                 ? "bg-[#1B2430] border-t border-white"
                 : ""
             }`}
@@ -70,10 +70,10 @@ export default function Hero(props) {
             <VscJson className="my-1 mr-1 text-yellow-300" />
             <span
               onClick={() => {
-                props.setContent("contact");
+                props.setContent("socials");
               }}
             >
-              contact.json
+              socials.json
             </span>
           </li>
         </ul>
@@ -93,8 +93,8 @@ export default function Hero(props) {
       ) : (
         ""
       )}
-      {props.content === "contact" ? (
-        <Contact content={props.content} setContent={props.setContent} />
+      {props.content === "socials" ? (
+        <Socials content={props.content} setContent={props.setContent} />
       ) : (
         ""
       )}

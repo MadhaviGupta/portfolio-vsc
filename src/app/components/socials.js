@@ -1,7 +1,7 @@
-export default function Contact() {
+export default function Socials() {
   return (
     <div>
-      <div className="font-mono text-lg tracking-wide">
+      <div className="font-mono text-lg tracking-wide pl-80 pt-20">
         &#123; <br />
         <span className="ml-4">
           &quot;name&quot; : &quot;Madhavi Gupta&quot;,
@@ -49,6 +49,17 @@ export default function Contact() {
             className="hover:underline"
           >
             madhavi_gupta1
+          </a>
+          &quot;
+        </span>
+        <br />
+        <span className="ml-8">
+          &quot;instagram&quot; : &quot;
+          <a
+            href="https://www.instagram.com/madhaviigupta/"
+            className="hover:underline"
+          >
+            madhaviigupta
           </a>
           &quot;
         </span>
