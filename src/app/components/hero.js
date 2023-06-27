@@ -3,11 +3,11 @@ import { VscJson } from "react-icons/vsc";
 import { VscInfo } from "react-icons/vsc";
 import { DiJavascript1 } from "react-icons/di";
 import { BsTextLeft } from "react-icons/bs";
-import Home from "./home";
-import About from "./about";
-import Work from "./work";
-import Socials from "./socials";
-import Contact from "./contact";
+import Home from "./hero/home";
+import About from "./hero/about";
+import Work from "./hero/work";
+import Socials from "./hero/socials";
+import Contact from "./hero/contact";
 export default function Hero(props) {
   return (
     <div>
