@@ -88,7 +88,7 @@ function ToolsArr() {
 const aboutContent = [
   {
     id: 1,
-    name: "Education and Hobbies",
+    name: "About Me",
     img: education,
     desc: "I'm a final year student pursuing B.Tech. in computer science stream at Medicaps University, Indore. Always up for learning new things related to tech and food. I like to design write-ups, read books and various articles about technology, food, nation, health, mankind,  etc.",
   },

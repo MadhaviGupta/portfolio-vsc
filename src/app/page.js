@@ -11,7 +11,7 @@ export default function Page() {
     <main className="">
       <Navbar />
       <div className="flex">
-        <Sidebar />
+        <Sidebar content={content} setContent={setContent} />
         <Explorer content={content} setContent={setContent} />
         <Hero content={content} setContent={setContent} />
       </div>

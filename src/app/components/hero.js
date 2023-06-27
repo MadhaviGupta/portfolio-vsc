@@ -2,10 +2,12 @@ import { IoLogoHtml5 } from "react-icons/io";
 import { VscJson } from "react-icons/vsc";
 import { VscInfo } from "react-icons/vsc";
 import { DiJavascript1 } from "react-icons/di";
+import { BsTextLeft } from "react-icons/bs";
 import Home from "./home";
 import About from "./about";
 import Work from "./work";
 import Socials from "./socials";
+import Contact from "./contact";
 export default function Hero(props) {
   return (
     <div>
@@ -76,6 +78,22 @@ export default function Hero(props) {
               socials.json
             </span>
           </li>
+          <li
+            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#131922] ${
+              props.content === "contact"
+                ? "bg-[#1B2430] border-t border-white"
+                : ""
+            }`}
+          >
+            <BsTextLeft className="my-1 mr-1 text-white" />
+            <span
+              onClick={() => {
+                props.setContent("contact");
+              }}
+            >
+              contact.txt
+            </span>
+          </li>
         </ul>
       </div>
       {props.content === "home" ? (
@@ -95,6 +113,11 @@ export default function Hero(props) {
       )}
       {props.content === "socials" ? (
         <Socials content={props.content} setContent={props.setContent} />
+      ) : (
+        ""
+      )}
+      {props.content === "contact" ? (
+        <Contact content={props.content} setContent={props.setContent} />
       ) : (
         ""
       )}

@@ -2,6 +2,7 @@ import { IoLogoHtml5 } from "react-icons/io";
 import { VscJson } from "react-icons/vsc";
 import { VscInfo } from "react-icons/vsc";
 import { DiJavascript1 } from "react-icons/di";
+import { BsTextLeft } from "react-icons/bs";
 export default function Explorer(props) {
   return (
     <div className="flex flex-col bg-[#121c2b] w-60 min-w-80 min-h-screen fixed top-0 left-16 pt-8 z-0">
@@ -48,6 +49,15 @@ export default function Explorer(props) {
               >
                 <VscJson className="my-1 mr-1 text-yellow-300" />
                 <span>socials.json</span>
+              </li>
+              <li
+                className={`flex my-2 p-0.5 hover:cursor-pointer ${
+                  props.content === "contact" ? "bg-[#263446]" : ""
+                }`}
+                onClick={() => props.setContent("contact")}
+              >
+                <BsTextLeft className="my-1 mr-1 text-white" />
+                <span>contact.txt</span>
               </li>
             </ul>
           </details>
