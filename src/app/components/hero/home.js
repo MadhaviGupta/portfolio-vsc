@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
-import main from "../../../public/main.png";
+import main from "../../../../public/images/main.png";
 import { BsArrowUpRight } from "react-icons/bs";
 export default function Home(props) {
   return (

@@ -1,9 +1,9 @@
 import Image from "next/image";
-import education from "../../../public/education.png";
-import experience from "../../../public/experience.png";
-import languages from "../../../public/languages.png";
-import frameworks from "../../../public/frameworks.png";
-import tools from "../../../public/tools.png";
+import education from "../../../../public/images/education.png";
+import experience from "../../../../public/images/experience.png";
+import languages from "../../../../public/images/languages.png";
+import frameworks from "../../../../public/images/frameworks.png";
+import tools from "../../../../public/images/tools.png";
 import { MdPlayArrow } from "react-icons/md";
 function LanguagesArr() {
   return (
