@@ -11,12 +11,12 @@ import Contact from "./hero/contact";
 export default function Hero(props) {
   return (
     <div>
-      <div className="fixed top-8 left-80">
-        <ul className="flex text-sm bg-[#121c2b] -ml-4">
+      <div className="fixed top-8 left-80 w-full">
+        <ul className="flex text-sm bg-[#191b20] -ml-4">
           <li
-            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#131922] ${
+            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "home"
-                ? "bg-[#1B2430] border-t border-white"
+                ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
             }}`}
           >
@@ -31,9 +31,9 @@ export default function Hero(props) {
           </li>
           <hr className="border-black" />
           <li
-            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#131922] ${
+            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "about"
-                ? "bg-[#1B2430] border-t border-white"
+                ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
             }`}
           >
@@ -47,9 +47,9 @@ export default function Hero(props) {
             </span>
           </li>
           <li
-            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#131922] ${
+            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "work"
-                ? "bg-[#1B2430] border-t border-white"
+                ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
             }`}
           >
@@ -63,9 +63,9 @@ export default function Hero(props) {
             </span>
           </li>
           <li
-            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#131922] ${
+            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "socials"
-                ? "bg-[#1B2430] border-t border-white"
+                ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
             }`}
           >
@@ -79,9 +79,9 @@ export default function Hero(props) {
             </span>
           </li>
           <li
-            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#131922] ${
+            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "contact"
-                ? "bg-[#1B2430] border-t border-white"
+                ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
             }`}
           >

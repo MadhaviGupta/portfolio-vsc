@@ -120,11 +120,11 @@ const aboutContent = [
 export default function About() {
   return (
     <div>
-      <div className="flex flex-row font-mono tracking-tight flex-wrap pl-80 pt-20">
+      <div className="flex flex-wrap pl-80 pt-20">
         {aboutContent.map((data) => (
           <div
             key={data.id}
-            className="flex flex-col items-center bg-[#121c2b] hover:shadow-xl shadow-white bg-opacity-90 rounded-lg w-1/4 p-6 m-4"
+            className="flex flex-col items-center bg-[#1a1c22] hover:shadow-xl shadow-white bg-opacity-90 rounded-lg w-1/4 p-6 m-4"
           >
             <Image
               src={data.img}
@@ -133,9 +133,9 @@ export default function About() {
               className="bg-slate-200 rounded-lg"
               alt="img"
             />
-            <div className="font-bold text-xl m-4 mb-0">{data.name}</div>
+            <div className="font-bold text-xl m-4 mb-0 text-[#fa6c5f]">{data.name}</div>
             <hr className="border-1 w-full m-2" />
-            <div className="text-sm mt-2">{data.desc}</div>
+            <div className="text-sm mt-2 text-[#689775]">{data.desc}</div>
           </div>
         ))}
       </div>

@@ -1,12 +1,13 @@
 import { AiOutlineUser, AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 export default function Contact() {
   return (
-    <div className="pl-80 pt-20">
+    <div className="flex flex-col pl-80 pt-20">
+      <div></div>
       <div className="flex justify-center">
         <form
           action="https://getform.io/f/b5fb0d9b-5cdd-4b28-8fed-7d9dd0d5f188"
           method="POST"
-          className="bg-slate-200 px-6 py-4 rounded-md w-96 text-blue-900"
+          className="bg-[#1a1c22] px-6 py-4 rounded-md w-96"
         >
           <div className="flex flex-col">
             <label htmlFor="name" className="flex my-2">
@@ -16,7 +17,7 @@ export default function Contact() {
             <input
               type="text"
               name="name"
-              className="rounded-md p-2 mb-2 w-full border-2 border-slate-300 bg-white focus:border-blue-900"
+              className="rounded-md p-2 mb-2 w-11/12 border-2 border-[#14161a] bg-[#14161a] focus:border-[#fa6c5f] outline-none"
             />
             <label htmlFor="name" className="flex my-2">
               <AiOutlineMail className="m-1" />
@@ -25,7 +26,7 @@ export default function Contact() {
             <input
               type="email"
               name="email"
-              className="rounded-md p-2 mb-2 border-2 border-slate-300 bg-white "
+              className="rounded-md p-2 mb-2 w-11/12 border-2 border-[#14161a] bg-[#14161a] focus:border-[#fa6c5f] outline-none"
             />
             <label htmlFor="name" className="flex my-2">
               <AiOutlineMessage className="m-1" />
@@ -34,13 +35,13 @@ export default function Contact() {
             <textarea
               rows={7}
               name="message"
-              className="rounded-md p-2 mb-1 border-2 border-slate-300 bg-white"
+              className="rounded-md p-2 mb-2 w-11/12 border-2 border-[#14161a] bg-[#14161a] focus:border-[#fa6c5f] outline-none"
             />
           </div>
           <div className="flex justify-center m-3">
             <button
               type="submit"
-              className="bg-[#121c2b] p-3 rounded-lg text-white hover:text-slate-300 hover:shadow-md hover:shadow-slate-500 transition-all duration-500 ease-in-out"
+              className="flex border-2 text-[#fa6c5f] border-[#ffffff] hover:text-[#689775] p-3 rounded-lg hover:shadow-lg transition-all duration-500 ease-in-out"
             >
               Send Message
             </button>

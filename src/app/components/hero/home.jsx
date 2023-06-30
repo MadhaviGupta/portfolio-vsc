@@ -1,33 +1,35 @@
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import main from "../../../../public/images/main.png";
+import main2 from "../../../../public/images/main2.png";
+import main3 from "../../../../public/images/main3.png";
 import { BsArrowUpRight } from "react-icons/bs";
 export default function Home(props) {
   return (
     <div className="flex w-full justify-between">
       <div className="pl-80">
-        <div className="flex justify-start text-5xl tracking-tight m-2 font-mono w-full pt-56">
+        <div className="flex text-[#fa6c5f] justify-start text-5xl m-2 w-full pt-56">
           <Typewriter
             onInit={(typewriter) => {
               typewriter.typeString("Hey there! I'm Madhavi.").start();
             }}
           />
         </div>
-        <div className="flex justify-start text-2xl text-slate-400 font-mono m-2 mt-4 tracking-tighter">
+        <div className="flex justify-start text-2xl text-[#689775]  m-2 mt-4">
           A front-end developer and a tech enthusiast.
         </div>
         <div className="my-12"></div>
         <div className="flex justify-start">
           <button
-            className="border-2 border-white p-3 rounded-lg hover:bg-white hover:text-slate-900 hover:shadow-lg transition-all duration-500 ease-in-out"
+            className="flex border-2 text-[#fa6c5f] border-[#ffffff] hover:text-[#689775] p-3 rounded-lg hover:shadow-lg transition-all duration-500 ease-in-out"
             onClick={() => {
               props.setContent("socials");
             }}
           >
-            socials Me
+            Connect with Me
           </button>
           <button
-            className="flex border-2 border-white p-3 rounded-lg hover:bg-white hover:text-slate-900 hover:shadow-lg transition-all duration-500 ease-in-out mx-5"
+            className="flex border-2 text-[#fa6c5f] border-[#ffffff] hover:text-[#689775] p-3 rounded-lg hover:shadow-lg transition-all duration-500 ease-in-out mx-5"
             onClick={() => {
               props.setContent("about");
             }}
@@ -35,8 +37,10 @@ export default function Home(props) {
             Know more about me
             <BsArrowUpRight className="my-1 mx-1.5" />
           </button>
-          <button className="flex border-2 border-white p-3 rounded-lg hover:bg-white hover:text-slate-900 hover:shadow-lg transition-all duration-500 ease-in-out">
-            Download my Resume
+          <button className="flex border-2 text-[#fa6c5f] border-[#ffffff] hover:text-[#689775] p-3 rounded-lg hover:shadow-lg transition-all duration-500 ease-in-out">
+            <a href="/MadhaviGuptaResume.pdf" download>
+              Download my Resume
+            </a>
           </button>
         </div>
       </div>

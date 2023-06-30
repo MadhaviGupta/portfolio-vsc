@@ -8,7 +8,7 @@ export default function Page() {
   const [content, setContent] = useState("home");
 
   return (
-    <main className="">
+    <main>
       <Navbar />
       <div className="flex">
         <Sidebar content={content} setContent={setContent} />
