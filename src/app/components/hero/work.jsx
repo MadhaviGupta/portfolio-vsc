@@ -57,7 +57,7 @@ export default function Work() {
   return (
     <div className="pl-80 pt-20">
       <div className="text-2xl font-bold flex m-6">
-        Projects I've built so far.
+        Projects I&apos;ve built so far.
       </div>
       <div className="flex flex-wrap">
         {workContent.map((data) => (
