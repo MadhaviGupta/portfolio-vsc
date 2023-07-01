@@ -2,8 +2,11 @@ import { AiOutlineUser, AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 export default function Contact() {
   return (
     <div className="flex flex-col pl-80 pt-20">
-      <div></div>
-      <div className="flex justify-center">
+      <div className="text-2xl font-bold flex m-6">
+        Any feedback or question?
+        <br /> Leave a message.
+      </div>
+      <div className="flex justify-start ml-6">
         <form
           action="https://getform.io/f/b5fb0d9b-5cdd-4b28-8fed-7d9dd0d5f188"
           method="POST"

@@ -19,15 +19,12 @@ export default function Hero(props) {
                 ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
             }}`}
+            onClick={() => {
+              props.setContent("home");
+            }}
           >
             <IoLogoHtml5 className="my-1 mr-1 text-red-500" />
-            <span
-              onClick={() => {
-                props.setContent("home");
-              }}
-            >
-              home.html
-            </span>
+            <span>home.html</span>
           </li>
           <hr className="border-black" />
           <li
@@ -36,15 +33,12 @@ export default function Hero(props) {
                 ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
             }`}
+            onClick={() => {
+              props.setContent("about");
+            }}
           >
             <VscInfo className="my-1 mr-1 text-blue-600" />
-            <span
-              onClick={() => {
-                props.setContent("about");
-              }}
-            >
-              about.md
-            </span>
+            <span>about.md</span>
           </li>
           <li
             className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
@@ -52,15 +46,12 @@ export default function Hero(props) {
                 ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
             }`}
+            onClick={() => {
+              props.setContent("work");
+            }}
           >
             <DiJavascript1 className="my-1 mr-1 text-yellow-300" />
-            <span
-              onClick={() => {
-                props.setContent("work");
-              }}
-            >
-              work.js
-            </span>
+            <span>work.js</span>
           </li>
           <li
             className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
@@ -68,15 +59,12 @@ export default function Hero(props) {
                 ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
             }`}
+            onClick={() => {
+              props.setContent("socials");
+            }}
           >
             <VscJson className="my-1 mr-1 text-yellow-300" />
-            <span
-              onClick={() => {
-                props.setContent("socials");
-              }}
-            >
-              socials.json
-            </span>
+            <span>socials.json</span>
           </li>
           <li
             className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
@@ -84,15 +72,12 @@ export default function Hero(props) {
                 ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
             }`}
+            onClick={() => {
+              props.setContent("contact");
+            }}
           >
             <BsTextLeft className="my-1 mr-1 text-white" />
-            <span
-              onClick={() => {
-                props.setContent("contact");
-              }}
-            >
-              contact.txt
-            </span>
+            <span>contact.txt</span>
           </li>
         </ul>
       </div>
