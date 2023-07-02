@@ -11,8 +11,8 @@ import Contact from "./hero/contact";
 export default function Hero(props) {
   return (
     <div>
-      <div className="md:fixed md:top-8 md:left-80 md:w-full">
-        <ul className="flex text-sm bg-[#191b20] -ml-4">
+      <div className="md:fixed relative sm:top-8 md:left-80 sm:left-20 w-full top-8 left-20">
+        <ul className="flex md:text-sm text-xs bg-[#22252c] -ml-4">
           <li
             className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "home"
@@ -26,9 +26,8 @@ export default function Hero(props) {
             <IoLogoHtml5 className="my-1 mr-1 text-red-500" />
             <span>home.html</span>
           </li>
-          <hr className="border-black" />
           <li
-            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
+            className={`flex mx-1 p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "about"
                 ? "bg-[#14161a] border-t border-[#689775]"
                 : ""

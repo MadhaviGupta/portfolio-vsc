@@ -1,9 +1,9 @@
 export default function Socials() {
   return (
     <div>
-      <div className="text-lg tracking-wider md:pt-20 pt-4 md:pl-80 pl-24">
-        <div className="text-2xl font-bold flex mx-3 my-6">Get in touch with me.</div>
-        <div className="m-3 text-[16px] md:text-md">
+      <div className="pt-14 md:pl-80 pl-20">
+        <div className="md:text-2xl text-lg font-bold flex md:m-6 m-2">Get in touch with me.</div>
+        <div className="m-3 text-md md:text-md">
           &#123; <br />
           <span className="ml-4">
             &quot;name&quot; :&quot;

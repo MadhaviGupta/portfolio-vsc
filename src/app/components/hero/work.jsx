@@ -55,15 +55,15 @@ const workContent = [
 
 export default function Work() {
   return (
-    <div className="md:pt-20 pt-4 md:pl-80 pl-24">
-      <div className="text-2xl font-bold flex m-6">
+    <div className="pt-14 md:pl-80 pl-24">
+      <div className="md:text-2xl text-lg font-bold flex m-6">
         Projects I&apos;ve built so far.
       </div>
       <div className="flex flex-wrap">
         {workContent.map((data) => (
           <div
             key={data.id}
-            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-green-600/10 bg-opacity-90 rounded-lg md:w-1/4 w-3/4 p-6 m-4"
+            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-green-600/10 bg-opacity-90 rounded-lg md:w-1/4 sm:w-3/4 w-auto p-6 m-4"
           >
             <div className="flex justify-center">
               <Image

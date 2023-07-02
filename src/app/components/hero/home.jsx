@@ -11,7 +11,7 @@ export default function Home(props) {
               }}
             />
           </div>
-          <div className="flex justify-start font-bold md:text-3xl text-lg text-[#689775] m-2 mt-4 w-64">
+          <div className="flex justify-start font-bold md:text-3xl text-lg text-[#689775] m-2 mt-4 w-64 md:w-96">
             A front-end developer and a tech enthusiast.
           </div>
           <div className="my-12"></div>
@@ -24,7 +24,7 @@ export default function Home(props) {
             >
               Connect with Me
             </button>
-            <button className="flex md:text-lg text-sm border-2 text-[#fa6c5f] border-[#ffffff] hover:text-[#689775] p-3 rounded-lg transition-all duration-500 ease-in-out mx-5 font-bold hover:shadow-lg hover:shadow-green-600/50">
+            <button className="flex md:text-lg text-sm border-2 text-[#fa6c5f] border-[#ffffff] hover:text-[#689775] p-3 rounded-lg transition-all duration-500 ease-in-out md:mx-5 mx-2 font-bold hover:shadow-lg hover:shadow-green-600/50">
               <a href="/MadhaviGuptaResume.pdf" download>
                 Download my Resume
               </a>
