@@ -3,7 +3,7 @@ export default function Home(props) {
   return (
     <div>
       <div className="flex w-full justify-between">
-        <div className="md:pl-80 pl-24">
+        <div className="md:pl-80 pl-20">
           <div className="flex text-[#fa6c5f] justify-start md:text-7xl text-5xl font-bold m-2 w-full md:pt-56 pt-28">
             <Typewriter
               onInit={(typewriter) => {
