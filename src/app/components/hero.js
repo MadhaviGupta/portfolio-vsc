@@ -11,10 +11,10 @@ import Contact from "./hero/contact";
 export default function Hero(props) {
   return (
     <div>
-      <div className="fixed sm:top-8 md:left-80 sm:left-20 w-full top-8 left-20">
-        <ul className="flex md:text-sm text-xs bg-[#22252c] -ml-4 overflow-x-scroll md:overflow-hidden">
+      <div className="fixed md:left-80 left-20 w-full top-8">
+        <ul className="flex md:text-sm text-xs bg-[#22252c] -ml-4">
           <li
-            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
+            className={`flex m-1 p-1 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "home"
                 ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
@@ -27,7 +27,7 @@ export default function Hero(props) {
             <span>home.html</span>
           </li>
           <li
-            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
+            className={`flex m-1 p-1 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "about"
                 ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
@@ -40,7 +40,7 @@ export default function Hero(props) {
             <span>about.md</span>
           </li>
           <li
-            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
+            className={`flex m-1 p-1 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "work"
                 ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
@@ -53,7 +53,7 @@ export default function Hero(props) {
             <span>work.js</span>
           </li>
           <li
-            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
+            className={`flex m-1 p-1 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "socials"
                 ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
@@ -66,7 +66,7 @@ export default function Hero(props) {
             <span>socials.json</span>
           </li>
           <li
-            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
+            className={`flex m-1 p-1 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "contact"
                 ? "bg-[#14161a] border-t border-[#689775]"
                 : ""
