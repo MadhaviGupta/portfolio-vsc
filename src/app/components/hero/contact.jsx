@@ -1,16 +1,16 @@
 import { AiOutlineUser, AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 export default function Contact() {
   return (
-    <div className="flex flex-col pl-80 pt-20">
-      <div className="text-2xl font-bold flex m-6">
+    <div className="flex flex-col md:pt-20 pt-4 md:pl-80 pl-24">
+      <div className="md:text-2xl text-xl font-bold flex md:m-6 m-4">
         Any feedback or question?
         <br /> Leave a message.
       </div>
-      <div className="flex justify-start ml-6">
+      <div className="flex justify-start md:ml-6 ml-2">
         <form
           action="https://getform.io/f/b5fb0d9b-5cdd-4b28-8fed-7d9dd0d5f188"
           method="POST"
-          className="bg-[#1a1c22] px-6 py-4 rounded-md w-96"
+          className="bg-[#1a1c22] px-6 py-4 rounded-md md:w-96 w-80"
         >
           <div className="flex flex-col">
             <label htmlFor="name" className="flex my-2">
@@ -44,7 +44,7 @@ export default function Contact() {
           <div className="flex justify-center m-3">
             <button
               type="submit"
-              className="flex border-2 text-[#fa6c5f] border-[#ffffff] hover:text-[#689775] p-3 rounded-lg hover:shadow-lg transition-all duration-500 ease-in-out"
+              className="flex border-2 text-sm md:text-md text-[#fa6c5f] border-[#ffffff] hover:text-[#689775] p-3 rounded-lg hover:shadow-lg transition-all duration-500 ease-in-out"
             >
               Send Message
             </button>

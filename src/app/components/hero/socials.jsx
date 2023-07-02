@@ -1,14 +1,14 @@
 export default function Socials() {
   return (
     <div>
-      <div className="text-lg tracking-wider pl-80 pt-20 social">
-        <div className="text-2xl font-bold flex m-6">Get in touch with me.</div>
-        <div className="m-7">
+      <div className="text-lg tracking-wider md:pt-20 pt-4 md:pl-80 pl-24">
+        <div className="text-2xl font-bold flex mx-3 my-6">Get in touch with me.</div>
+        <div className="m-3 text-[16px] md:text-md">
           &#123; <br />
           <span className="ml-4">
             &quot;name&quot; :&quot;
             <span className="text-[#fa6c5f]">Madhavi Gupta</span>&quot;,
-          </span> 
+          </span>
           <br />
           <span className="ml-4">
             &quot;email&quot; : &quot;

@@ -5,7 +5,7 @@ import { DiJavascript1 } from "react-icons/di";
 import { BsTextLeft } from "react-icons/bs";
 export default function Explorer(props) {
   return (
-    <div className="flex flex-col bg-[#191b20] w-60 min-w-80 min-h-screen fixed top-0 left-16 pt-8 z-0">
+    <div className="md:flex hidden flex-col bg-[#191b20] w-60 md:min-w-80 min-h-screen fixed top-0 md:left-16 pt-8 z-0">
       <div className="justify-between pr-10 p-3">
         <div className="tracking-wider text-lg">EXPLORER</div>
         <div>
