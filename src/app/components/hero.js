@@ -11,7 +11,7 @@ import Contact from "./hero/contact";
 export default function Hero(props) {
   return (
     <div>
-      <div className="md:fixed relative sm:top-8 md:left-80 sm:left-20 w-full top-8 left-20">
+      <div className="fixed sm:top-8 md:left-80 sm:left-20 w-full top-8 left-20">
         <ul className="flex md:text-sm text-xs bg-[#22252c] -ml-4">
           <li
             className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
@@ -27,7 +27,7 @@ export default function Hero(props) {
             <span>home.html</span>
           </li>
           <li
-            className={`flex mx-1 p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
+            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "about"
                 ? "bg-[#14161a] border-t border-[#689775]"
                 : ""

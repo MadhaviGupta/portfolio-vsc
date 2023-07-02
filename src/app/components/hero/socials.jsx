@@ -1,8 +1,8 @@
 export default function Socials() {
   return (
     <div>
-      <div className="pt-14 md:pl-80 pl-20">
-        <div className="md:text-2xl text-lg font-bold flex md:m-6 m-2">Get in touch with me.</div>
+      <div className="pt-20 md:pl-80 pl-20">
+      <div className="md:text-2xl text-lg font-bold flex md:m-6 m-3">Get in touch with me.</div>
         <div className="m-3 text-md md:text-md">
           &#123; <br />
           <span className="ml-4">

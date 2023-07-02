@@ -1,8 +1,8 @@
 import { AiOutlineUser, AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 export default function Contact() {
   return (
-    <div className="flex flex-col pt-14 md:pl-80 pl-24">
-      <div className="md:text-2xl text-lg font-bold flex md:m-6 m-2">
+    <div className="pt-20 md:pl-80 pl-20">
+      <div className="md:text-2xl text-lg font-bold flex md:m-6 m-3">
         Any feedback or question?
         <br /> Leave a message.
       </div>

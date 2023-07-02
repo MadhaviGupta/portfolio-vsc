@@ -32,7 +32,7 @@ export default function Home(props) {
           </div>
         </div>
       </div>
-      <div className="text-[160px] blur-sm font-extrabold text-gray-500/25 pl-80 -mt-80 -z-10 absolute md:block hidden">
+      <div className="text-[160px] blur-sm font-extrabold text-gray-500/25 pl-80 -mt-96 -z-10 absolute md:block hidden">
         Madhavi <br />
         Gupta
       </div>

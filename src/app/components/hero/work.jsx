@@ -55,15 +55,15 @@ const workContent = [
 
 export default function Work() {
   return (
-    <div className="pt-14 md:pl-80 pl-24">
-      <div className="md:text-2xl text-lg font-bold flex m-6">
+    <div className="pt-20 md:pl-80 pl-20">
+      <div className="md:text-2xl text-lg font-bold flex md:m-6 m-3">
         Projects I&apos;ve built so far.
       </div>
       <div className="flex flex-wrap">
         {workContent.map((data) => (
           <div
             key={data.id}
-            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-green-600/10 bg-opacity-90 rounded-lg md:w-1/4 sm:w-3/4 w-auto p-6 m-4"
+            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-green-600/20 bg-opacity-90 rounded-lg min-w-min md:w-1/4 w-3/4 p-6 m-4"
           >
             <div className="flex justify-center">
               <Image
@@ -78,7 +78,7 @@ export default function Work() {
               {data.name}
             </div>
             <hr className="border-1 w-full mb-2" />
-            <div className="text-sm text-[#689775]">{data.desc}</div>
+            <div className="tracking-wide text-sm mt-2 text-[#689775]">{data.desc}</div>
             <ul className="my-4 text-md text-[#689775] flex flex-wrap justify-start">
               {data.language && (
                 <li className="flex justify-start">
@@ -99,7 +99,7 @@ export default function Work() {
                 </li>
               )}
             </ul>
-            <div className="flex justify-center text-2xl">
+            <div className="flex justify-start text-2xl">
               <a href={data.githubLink} target="_blank">
                 <VscGithub className="m-2 hover:text-[#fa6c5f]" />
               </a>
