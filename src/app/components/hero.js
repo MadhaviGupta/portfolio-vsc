@@ -11,8 +11,8 @@ import Contact from "./hero/contact";
 export default function Hero(props) {
   return (
     <div>
-      <div className="fixed md:left-80 left-20 w-full top-8">
-        <ul className="flex md:text-sm text-xs bg-[#22252c] -ml-4 overflow-x-auto">
+      <div className="fixed md:left-[19rem] left-[4rem] md:w-full w-[86%] overflow-x-auto top-8 bg-[#22252c]">
+        <ul className="flex md:text-sm text-xs">
           <li
             className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "home"
@@ -23,8 +23,8 @@ export default function Hero(props) {
               props.setContent("home");
             }}
           >
-            <IoLogoHtml5 className="my-1 mr-1 text-red-500" />
-            <span>home.html</span>
+            <IoLogoHtml5 className="md:my-1 md:mr-1 m-1 my-0.5 text-red-500" />
+            <span className="">home.html</span>
           </li>
           <li
             className={`flex  p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
@@ -36,7 +36,7 @@ export default function Hero(props) {
               props.setContent("about");
             }}
           >
-            <VscInfo className="my-1 mr-1 text-blue-600" />
+            <VscInfo className="md:my-1 md:mr-1 m-1 my-0.5 text-blue-600" />
             <span>about.md</span>
           </li>
           <li
@@ -49,7 +49,7 @@ export default function Hero(props) {
               props.setContent("work");
             }}
           >
-            <DiJavascript1 className="my-1 mr-1 text-yellow-300" />
+            <DiJavascript1 className="md:my-1 md:mr-1 m-1 my-0.5 text-yellow-300" />
             <span>work.js</span>
           </li>
           <li
@@ -62,7 +62,7 @@ export default function Hero(props) {
               props.setContent("socials");
             }}
           >
-            <VscJson className="my-1 mr-1 text-yellow-300" />
+            <VscJson className="md:my-1 md:mr-1 m-1 my-0.5 text-yellow-300" />
             <span>socials.json</span>
           </li>
           <li
@@ -75,7 +75,7 @@ export default function Hero(props) {
               props.setContent("contact");
             }}
           >
-            <BsTextLeft className="my-1 mr-1 text-white" />
+            <BsTextLeft className="md:my-1 md:mr-1 m-1 my-0.5 text-white" />
             <span>contact.txt</span>
           </li>
         </ul>
