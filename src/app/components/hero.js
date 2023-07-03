@@ -12,7 +12,7 @@ export default function Hero(props) {
   return (
     <div>
       <div className="fixed md:left-80 left-20 w-full top-8">
-        <ul className="flex md:text-sm text-xs bg-[#22252c] -ml-4 min-w-screen overflow-x-scroll md:overflow-hidden">
+        <ul className="flex md:text-sm text-xs bg-[#22252c] -ml-4 min-w-screen overflow-x-auto md:overflow-hidden">
           <li
             className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
               props.content === "home"
