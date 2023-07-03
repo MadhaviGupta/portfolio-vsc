@@ -63,14 +63,14 @@ export default function Work() {
         {workContent.map((data) => (
           <div
             key={data.id}
-            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-green-600/20 bg-opacity-90 rounded-lg min-w-min md:w-1/4 w-3/4 p-6 m-4"
+            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-green-600/30 transition-all duration-500 ease-in-out bg-opacity-90 rounded-lg min-w-min md:w-[28%] w-3/4 p-6 m-4"
           >
             <div className="flex justify-center">
               <Image
                 src={data.img}
-                width={160}
-                height={160}
-                className="rounded-lg w-9/12"
+                width={140}
+                height={140}
+                className="rounded-lg w-6/12"
                 alt="img"
               />
             </div>

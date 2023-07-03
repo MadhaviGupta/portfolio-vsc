@@ -8,7 +8,7 @@ import { MdPlayArrow } from "react-icons/md";
 function LanguagesArr() {
   return (
     <div>
-      <ul className="text-lg">
+      <ul className="text-sm">
         <li className="flex">
           <MdPlayArrow className="m-1.5" />
           HTML5
@@ -36,7 +36,7 @@ function LanguagesArr() {
 function FrameworksArr() {
   return (
     <div>
-      <ul className="text-lg">
+      <ul className="text-sm">
         <li className="flex">
           <MdPlayArrow className="m-1.5" />
           React.js
@@ -64,7 +64,7 @@ function FrameworksArr() {
 function ToolsArr() {
   return (
     <div>
-      <ul className="text-lg">
+      <ul className="text-sm">
         <li className="flex">
           <MdPlayArrow className="m-1.5" />
           Git & GitHub
@@ -127,7 +127,7 @@ export default function About() {
         {aboutContent.map((data) => (
           <div
             key={data.id}
-            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-green-600/20 bg-opacity-90 rounded-lg min-w-min md:w-1/4 w-3/4 p-6 m-4"
+            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-green-600/30 transition-all duration-500 ease-in-out bg-opacity-90 rounded-lg min-w-min md:w-[28%] w-3/4 p-6 m-4"
           >
             <div className="flex justify-center">
             <Image
@@ -142,7 +142,7 @@ export default function About() {
               {data.name}
             </div>
             <hr className="border-1 w-full mb-2" />
-            <div className="tracking-wide text-md mt-2 text-[#689775]">
+            <div className="tracking-wide text-sm mt-2 text-[#689775]">
               {data.desc}
             </div>
           </div>
