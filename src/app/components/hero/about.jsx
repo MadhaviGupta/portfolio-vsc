@@ -5,30 +5,31 @@ import languages from "../../../../public/images/langauges.png";
 import frameworks from "../../../../public/images/frameworks.png";
 import tools from "../../../../public/images/tools.png";
 import { MdPlayArrow } from "react-icons/md";
+const languageData = ["HTML5", "CSS3", "JavaScript", "Java", "C++"];
+const frameworksData = [
+  "React.js",
+  "Next.js",
+  "Tailwind CSS",
+  "Material UI",
+  "Bootstrap",
+];
+const toolsData = [
+  "Git",
+  "GitHub",
+  "Visual Studio Code",
+  "IntelliJ IDEA",
+  "Canva",
+];
 function LanguagesArr() {
   return (
     <div>
-      <ul className="text-sm">
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          HTML5
-        </li>
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          CSS3
-        </li>
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          JavaScript
-        </li>
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          Java
-        </li>
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          C++
-        </li>
+      <ul className="text-lg">
+        {languageData.map((language) => (
+          <li className="flex">
+            <MdPlayArrow className="m-1.5" />
+            {language}
+          </li>
+        ))}
       </ul>
     </div>
   );
@@ -36,27 +37,13 @@ function LanguagesArr() {
 function FrameworksArr() {
   return (
     <div>
-      <ul className="text-sm">
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          React.js
-        </li>
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          Next.js
-        </li>
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          Tailwind CSS
-        </li>
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          Material UI
-        </li>
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          Bootstrap
-        </li>
+      <ul className="text-lg">
+        {frameworksData.map((framework) => (
+          <li className="flex">
+            <MdPlayArrow className="m-1.5" />
+            {framework}
+          </li>
+        ))}
       </ul>
     </div>
   );
@@ -64,23 +51,13 @@ function FrameworksArr() {
 function ToolsArr() {
   return (
     <div>
-      <ul className="text-sm">
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          Git & GitHub
-        </li>
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          Visual Studio Code
-        </li>
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          IntelliJ IDEA
-        </li>
-        <li className="flex">
-          <MdPlayArrow className="m-1.5" />
-          Canva
-        </li>
+      <ul className="text-lg">
+        {toolsData.map((tool) => (
+          <li className="flex">
+            <MdPlayArrow className="m-1.5" />
+            {tool}
+          </li>
+        ))}
       </ul>
     </div>
   );
@@ -130,13 +107,13 @@ export default function About() {
             className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-subtext/20 transition-all duration-500 ease-in-out bg-opacity-90 rounded-lg min-w-min md:w-[28%] w-3/4 p-6 m-4"
           >
             <div className="flex justify-center">
-            <Image
-              src={data.img}
-              width={160}
-              height={160}
-              className="rounded-lg"
-              alt="img"
-            />
+              <Image
+                src={data.img}
+                width={160}
+                height={160}
+                className="rounded-lg"
+                alt="img"
+              />
             </div>
             <div className="font-bold text-xl mr-2 my-2 text-mainText">
               {data.name}

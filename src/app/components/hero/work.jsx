@@ -1,56 +1,58 @@
 import Image from "next/image";
 import texttools from "../../../../public/images/texttools.png";
 import vscportfolio from "../../../../public/images/vscportfolio.png";
-import portfolio from "../../../../public/images/portfolio.png";
+import greenkart from "../../../../public/images/greenkart.png";
 import gitshow from "../../../../public/images/gitshow.png";
+import tictactoe from "../../../../public/images/tictactoe.png"
 import { VscGithub, VscLinkExternal } from "react-icons/vsc";
 import { MdPlayArrow } from "react-icons/md";
 
 const workContent = [
   {
     id: 1,
+    name: "GreenKart",
+    img: greenkart,
+    desc: "An eco-friendly e-commerce application for a sustainable future. (Under development)",
+    githubLink: "https://github.com/SujalSamai/Greenkart",
+    liveLink: "https://greenkart.vercel.app/",
+    techStack: ["Next.js", "Tailwind CSS", "MongoDB", "Firebase", "Stripe"],
+  },
+  {
+    id: 2,
     name: "GitShow",
     img: gitshow,
     desc: "A platform for programmers, to showcase their projects hosted on the GitHub.",
     githubLink: "https://github.com/MadhaviGupta/GitShow",
     liveLink: "https://gitshowbysmg.vercel.app/",
-    language: "React.js",
-    style: "Tailwind CSS",
-    api: "GitHub API",
+    techStack: ["React.js", "Tailwind CSS", "GitHub API", "Firebase"],
   },
   {
-    id: 2,
+    id: 3,
     name: "Portfolio VSC",
     img: vscportfolio,
     desc: "A portfolio showing my skills and creations via a VS Code-inspired theme.",
     githubLink: "https://github.com/MadhaviGupta/portfolio-vsc",
     liveLink: "https://madhavigupta.vercel.app/",
-    language: "Next.js",
-    style: "Tailwind CSS",
-    api: "",
+    techStack: ["Next.js", "Tailwind CSS"],
   },
   {
-    id: 3,
+    id: 4,
     name: "Text-Tools",
     img: texttools,
     desc: "A versatile online platform for seamless text manipulation and analysis.",
     githubLink: "https://github.com/MadhaviGupta/Text-Tools",
     liveLink: "https://text-tools-madhavi.vercel.app/",
-    language: "React.js",
-    style: "Bootstrap",
-    api: "",
+    techStack: ["React.js", "Bootstrap"],
   },
   {
-    id: 4,
-    name: "Portfolio V1",
-    img: portfolio,
-    desc: "A user-friendly portfolio website showcasing my skills and projects.",
-    githubLink: "https://github.com/MadhaviGupta/Portfolio",
-    liveLink: "https://madhavi-gupta.vercel.app/",
-    language: "React.js",
-    style: "Material UI",
-    api: "",
+    id: 5,
+    name: "Tic Tac toe",
+    img: tictactoe,
+    desc: "A Java-based implementation of the classic Tic Tac Toe game for two players.",
+    githubLink: "https://github.com/MadhaviGupta/tic-tac-toe",
+    techStack: ["Java"],
   },
+  
 ];
 
 export default function Work() {
@@ -78,26 +80,17 @@ export default function Work() {
               {data.name}
             </div>
             <hr className="border-1 w-full mb-2" />
-            <div className="tracking-wide text-sm mt-2 text-subtext">{data.desc}</div>
-            <ul className="my-4 text-md text-subtext flex flex-wrap justify-start">
-              {data.language && (
-                <li className="flex justify-start">
-                  <MdPlayArrow className="m-1" />
-                  {data.language}
-                </li>
-              )}
-              {data.style && (
-                <li className="flex justify-start">
-                  <MdPlayArrow className="m-1" />
-                  {data.style}
-                </li>
-              )}
-              {data.api && (
-                <li className="flex justify-start">
-                  <MdPlayArrow className="m-1" />
-                  {data.api}
-                </li>
-              )}
+            <div className="tracking-wide text-sm mt-2 text-subtext">
+              {data.desc}
+            </div>
+            <ul className="my-4 text-md text-mainText flex flex-wrap justify-start">
+              {data &&
+                data.techStack.map((dataItem) => (
+                  <li className="flex justify-start">
+                    <MdPlayArrow className="m-1" />
+                    {dataItem}
+                  </li>
+                ))}
             </ul>
             <div className="flex justify-start text-2xl">
               <a href={data.githubLink} target="_blank">
