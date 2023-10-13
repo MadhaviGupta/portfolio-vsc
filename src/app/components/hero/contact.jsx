@@ -20,7 +20,7 @@ export default function Contact() {
             <input
               type="text"
               name="name"
-              className="rounded-md p-2 mb-2 w-full border-2 border-secondary bg-bgPrimary focus:border-[#fa6c5f] outline-none"
+              className="rounded-md p-2 mb-2 w-full border-2 border-bgPrimary bg-bgPrimary focus:border-[#fa6c5f] outline-none"
             />
             <label htmlFor="name" className="flex my-2">
               <AiOutlineMail className="m-1" />
@@ -29,7 +29,7 @@ export default function Contact() {
             <input
               type="email"
               name="email"
-              className="rounded-md p-2 mb-2 w-full border-2 border-secondary bg-bgPrimary focus:border-[#fa6c5f] outline-none"
+              className="rounded-md p-2 mb-2 w-full border-2 border-bgPrimary bg-bgPrimary focus:border-[#fa6c5f] outline-none"
             />
             <label htmlFor="name" className="flex my-2">
               <AiOutlineMessage className="m-1" />
@@ -38,7 +38,7 @@ export default function Contact() {
             <textarea
               rows={7}
               name="message"
-              className="rounded-md p-2 mb-2 w-full border-2 border-secondary bg-bgPrimary focus:border-[#fa6c5f] outline-none"
+              className="rounded-md p-2 mb-2 w-full border-2 border-bgPrimary bg-bgPrimary focus:border-[#fa6c5f] outline-none"
             />
           </div>
           <div className="flex justify-center m-3">

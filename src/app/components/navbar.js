@@ -18,8 +18,8 @@ export default function Navbar() {
             <li className="mx-2 hover:cursor-pointer text-sm">Help</li>
           </div>
         </ul>
-        <div className="flex justify-center items-center text-sm ml-4 md:ml-10 text-mainTextText">
-          Madhavi Gupta - Visual Studio Code
+        <div className="flex justify-center items-center text-sm ml-4 md:ml-10 text-mainText">
+          Madhavi Gupta
         </div>
         <div className="flex mx-3  my-1.5">
           <BsDashLg className="md:text-xl text-lg hover:cursor-pointer" />
