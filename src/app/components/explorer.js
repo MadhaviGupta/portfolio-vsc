@@ -5,7 +5,7 @@ import { DiJavascript1 } from "react-icons/di";
 import { BsTextLeft } from "react-icons/bs";
 export default function Explorer(props) {
   return (
-    <div className="md:flex hidden flex-col bg-[#22252c] w-60 md:min-w-80 md:min-h-screen fixed top-0 md:left-16 md:pt-8 bottom-0">
+    <div className="md:flex hidden flex-col bg-bgSecondary w-60 md:min-w-80 md:min-h-screen fixed top-0 md:left-16 md:pt-8 bottom-0 text-textPrimary">
       <div className="justify-between pr-10 p-3">
         <div className="tracking-wider text-lg">EXPLORER</div>
         <div>
@@ -16,7 +16,7 @@ export default function Explorer(props) {
             <ul className="text-sm mt-3 pl-3">
               <li
                 className={`flex my-2 p-0.5 hover:cursor-pointer ${
-                  props.content === "home" ? "bg-[#282f38] text-[#689775]" : ""
+                  props.content === "home" ? "bg-[#282f38] text-subtext" : ""
                 }`}
                 onClick={() => props.setContent("home")}
               >
@@ -25,7 +25,7 @@ export default function Explorer(props) {
               </li>
               <li
                 className={`flex my-2 p-0.5 hover:cursor-pointer ${
-                  props.content === "about" ? "bg-[#282f38] text-[#689775]" : ""
+                  props.content === "about" ? "bg-[#282f38] text-subtext" : ""
                 }`}
                 onClick={() => props.setContent("about")}
               >
@@ -34,7 +34,7 @@ export default function Explorer(props) {
               </li>
               <li
                 className={`flex my-2 p-0.5 hover:cursor-pointer ${
-                  props.content === "work" ? "bg-[#282f38] text-[#689775]" : ""
+                  props.content === "work" ? "bg-[#282f38] text-subtext" : ""
                 }`}
                 onClick={() => props.setContent("work")}
               >
@@ -43,7 +43,7 @@ export default function Explorer(props) {
               </li>
               <li
                 className={`flex my-2 p-0.5 hover:cursor-pointer ${
-                  props.content === "socials" ? "bg-[#282f38] text-[#689775]" : ""
+                  props.content === "socials" ? "bg-[#282f38] text-subtext" : ""
                 }`}
                 onClick={() => props.setContent("socials")}
               >
@@ -52,7 +52,7 @@ export default function Explorer(props) {
               </li>
               <li
                 className={`flex my-2 p-0.5 hover:cursor-pointer ${
-                  props.content === "contact" ? "bg-[#282f38] text-[#689775]" : ""
+                  props.content === "contact" ? "bg-[#282f38] text-subtext" : ""
                 }`}
                 onClick={() => props.setContent("contact")}
               >

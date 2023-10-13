@@ -1,7 +1,7 @@
 import { AiOutlineUser, AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 export default function Contact() {
   return (
-    <div className="pt-20 md:pl-80 pl-20">
+    <div className="pt-20 md:pl-80 pl-20 text-textPrimary">
       <div className="md:text-2xl text-lg font-bold flex md:m-6 m-3">
         Any feedback or question?
         <br /> Leave a message.
@@ -20,7 +20,7 @@ export default function Contact() {
             <input
               type="text"
               name="name"
-              className="rounded-md p-2 mb-2 w-full border-2 border-[#14161a] bg-[#14161a] focus:border-[#fa6c5f] outline-none"
+              className="rounded-md p-2 mb-2 w-full border-2 border-secondary bg-bgPrimary focus:border-[#fa6c5f] outline-none"
             />
             <label htmlFor="name" className="flex my-2">
               <AiOutlineMail className="m-1" />
@@ -29,7 +29,7 @@ export default function Contact() {
             <input
               type="email"
               name="email"
-              className="rounded-md p-2 mb-2 w-full border-2 border-[#14161a] bg-[#14161a] focus:border-[#fa6c5f] outline-none"
+              className="rounded-md p-2 mb-2 w-full border-2 border-secondary bg-bgPrimary focus:border-[#fa6c5f] outline-none"
             />
             <label htmlFor="name" className="flex my-2">
               <AiOutlineMessage className="m-1" />
@@ -38,13 +38,13 @@ export default function Contact() {
             <textarea
               rows={7}
               name="message"
-              className="rounded-md p-2 mb-2 w-full border-2 border-[#14161a] bg-[#14161a] focus:border-[#fa6c5f] outline-none"
+              className="rounded-md p-2 mb-2 w-full border-2 border-secondary bg-bgPrimary focus:border-[#fa6c5f] outline-none"
             />
           </div>
           <div className="flex justify-center m-3">
             <button
               type="submit"
-              className="flex border-2 text-sm md:text-md text-[#fa6c5f] border-[#ffffff] hover:text-[#689775] md:p-2 p-1.5 rounded-lg hover:shadow-lg hover:shadow-green-600/30 transition-all duration-500 ease-in-out"
+              className="flex border-2 text-sm md:text-md text-mainText border-[#ffffff] hover:text-subtext md:p-2 p-1.5 rounded-lg hover:shadow-lg hover:shadow-subtext/20 transition-all duration-500 ease-in-out"
             >
               Send Message
             </button>

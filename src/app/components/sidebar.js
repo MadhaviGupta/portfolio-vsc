@@ -4,7 +4,7 @@ import { VscAccount, VscFeedback } from "react-icons/vsc";
 import { AiOutlineMail } from "react-icons/ai";
 export default function Sidebar(props) {
   return (
-    <div className="flex flex-col text-3xl text-slate-400 pt-8 fixed h-full md:min-h-screen bg-[#22252c] md:bg-[#14161a]">
+    <div className="flex flex-col text-3xl text-slate-400 pt-8 fixed h-full md:min-h-screen bg-bgSecondary md:bg-bgPrimary">
       <div className="h-10/12 justify-between">
         <VscFiles
           className={`mx-4 my-6 cursor-pointer ${

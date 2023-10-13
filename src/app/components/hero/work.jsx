@@ -55,7 +55,7 @@ const workContent = [
 
 export default function Work() {
   return (
-    <div className="pt-20 md:pl-80 pl-20">
+    <div className="pt-20 md:pl-80 pl-20 text-textPrimary">
       <div className="md:text-2xl text-lg font-bold flex md:m-6 m-3">
         Projects I&apos;ve built so far.
       </div>
@@ -63,7 +63,7 @@ export default function Work() {
         {workContent.map((data) => (
           <div
             key={data.id}
-            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-green-600/30 transition-all duration-500 ease-in-out bg-opacity-90 rounded-lg min-w-min md:w-[28%] w-3/4 p-6 m-4"
+            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-subtext/20 transition-all duration-500 ease-in-out bg-opacity-90 rounded-lg min-w-min md:w-[28%] w-3/4 p-6 m-4"
           >
             <div className="flex justify-center">
               <Image
@@ -74,12 +74,12 @@ export default function Work() {
                 alt="img"
               />
             </div>
-            <div className="font-bold text-xl mr-2 my-2 text-[#fa6c5f]">
+            <div className="font-bold text-xl mr-2 my-2 text-mainText">
               {data.name}
             </div>
             <hr className="border-1 w-full mb-2" />
-            <div className="tracking-wide text-sm mt-2 text-[#689775]">{data.desc}</div>
-            <ul className="my-4 text-md text-[#689775] flex flex-wrap justify-start">
+            <div className="tracking-wide text-sm mt-2 text-subtext">{data.desc}</div>
+            <ul className="my-4 text-md text-subtext flex flex-wrap justify-start">
               {data.language && (
                 <li className="flex justify-start">
                   <MdPlayArrow className="m-1" />
@@ -101,10 +101,10 @@ export default function Work() {
             </ul>
             <div className="flex justify-start text-2xl">
               <a href={data.githubLink} target="_blank">
-                <VscGithub className="m-2 hover:text-[#fa6c5f]" />
+                <VscGithub className="m-2 hover:text-mainText" />
               </a>
               <a href={data.liveLink} target="_blank">
-                <VscLinkExternal className="m-2 hover:text-[#fa6c5f]" />
+                <VscLinkExternal className="m-2 hover:text-mainText" />
               </a>
             </div>
           </div>

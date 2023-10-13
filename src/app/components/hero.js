@@ -11,12 +11,12 @@ import Contact from "./hero/contact";
 export default function Hero(props) {
   return (
     <div>
-      <div className="fixed md:left-[19rem] left-[4rem] md:w-full w-[85%] overflow-x-auto top-8 bg-[#22252c]">
+      <div className="fixed md:left-[19rem] left-[4rem] md:w-full w-[85%] overflow-x-auto top-8 bg-bgSecondary text-textPrimary">
         <ul className="flex md:text-sm text-xs">
           <li
-            className={`flex p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
+            className={`flex p-1.5 hover:cursor-pointer hover:bg-bgPrimary ${
               props.content === "home"
-                ? "bg-[#14161a] border-t border-[#689775] border-8"
+                ? "bg-bgPrimary border-t border-[#689775] border-8"
                 : ""
             }}`}
             onClick={() => {
@@ -27,9 +27,9 @@ export default function Hero(props) {
             <span className="">home.html</span>
           </li>
           <li
-            className={`flex  p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
+            className={`flex  p-1.5 hover:cursor-pointer hover:bg-bgPrimary ${
               props.content === "about"
-                ? "bg-[#14161a] border-t border-[#689775]"
+                ? "bg-bgPrimary border-t border-[#689775]"
                 : ""
             }`}
             onClick={() => {
@@ -40,9 +40,9 @@ export default function Hero(props) {
             <span>about.md</span>
           </li>
           <li
-            className={`flex  p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
+            className={`flex  p-1.5 hover:cursor-pointer hover:bg-bgPrimary ${
               props.content === "work"
-                ? "bg-[#14161a] border-t border-[#689775]"
+                ? "bg-bgPrimary border-t border-[#689775]"
                 : ""
             }`}
             onClick={() => {
@@ -53,9 +53,9 @@ export default function Hero(props) {
             <span>work.js</span>
           </li>
           <li
-            className={`flex  p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
+            className={`flex  p-1.5 hover:cursor-pointer hover:bg-bgPrimary ${
               props.content === "socials"
-                ? "bg-[#14161a] border-t border-[#689775]"
+                ? "bg-bgPrimary border-t border-[#689775]"
                 : ""
             }`}
             onClick={() => {
@@ -66,9 +66,9 @@ export default function Hero(props) {
             <span>socials.json</span>
           </li>
           <li
-            className={`flex  p-1.5 hover:cursor-pointer hover:bg-[#14161a] ${
+            className={`flex  p-1.5 hover:cursor-pointer hover:bg-bgPrimary ${
               props.content === "contact"
-                ? "bg-[#14161a] border-t border-[#689775]"
+                ? "bg-bgPrimary border-t border-[#689775]"
                 : ""
             }`}
             onClick={() => {

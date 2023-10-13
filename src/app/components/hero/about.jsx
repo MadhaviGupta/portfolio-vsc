@@ -119,15 +119,15 @@ const aboutContent = [
 ];
 export default function About() {
   return (
-    <div className="pt-20 md:pl-80 pl-20">
-      <div className="md:text-2xl text-lg font-bold flex md:m-6 m-3">
+    <div className="pt-20 md:pl-80 pl-20 text-textPrimary">
+      <div className="md:text-2xl text-lg font-bold flex md:m-6 m-3 ">
         About me.
       </div>
       <div className="flex flex-wrap">
         {aboutContent.map((data) => (
           <div
             key={data.id}
-            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-green-600/30 transition-all duration-500 ease-in-out bg-opacity-90 rounded-lg min-w-min md:w-[28%] w-3/4 p-6 m-4"
+            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-subtext/20 transition-all duration-500 ease-in-out bg-opacity-90 rounded-lg min-w-min md:w-[28%] w-3/4 p-6 m-4"
           >
             <div className="flex justify-center">
             <Image
@@ -138,11 +138,11 @@ export default function About() {
               alt="img"
             />
             </div>
-            <div className="font-bold text-xl mr-2 my-2 text-[#fa6c5f]">
+            <div className="font-bold text-xl mr-2 my-2 text-mainText">
               {data.name}
             </div>
             <hr className="border-1 w-full mb-2" />
-            <div className="tracking-wide text-sm mt-2 text-[#689775]">
+            <div className="tracking-wide text-sm mt-2 text-subtext">
               {data.desc}
             </div>
           </div>
