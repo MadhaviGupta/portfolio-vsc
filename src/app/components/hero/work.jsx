@@ -3,7 +3,7 @@ import texttools from "../../../../public/images/texttools.png";
 import vscportfolio from "../../../../public/images/vscportfolio.png";
 import greenkart from "../../../../public/images/greenkart.png";
 import gitshow from "../../../../public/images/gitshow.png";
-import tictactoe from "../../../../public/images/tictactoe.png"
+import tictactoe from "../../../../public/images/tictactoe.png";
 import { VscGithub, VscLinkExternal } from "react-icons/vsc";
 import { MdPlayArrow } from "react-icons/md";
 
@@ -52,7 +52,6 @@ const workContent = [
     githubLink: "https://github.com/MadhaviGupta/tic-tac-toe",
     techStack: ["Java"],
   },
-  
 ];
 
 export default function Work() {
@@ -86,7 +85,7 @@ export default function Work() {
             <ul className="my-4 text-md text-mainText flex flex-wrap justify-start">
               {data &&
                 data.techStack.map((dataItem) => (
-                  <li className="flex justify-start">
+                  <li className="flex justify-start" key={dataItem.id}>
                     <MdPlayArrow className="m-1" />
                     {dataItem}
                   </li>

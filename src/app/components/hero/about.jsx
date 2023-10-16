@@ -25,7 +25,7 @@ function LanguagesArr() {
     <div>
       <ul className="text-lg">
         {languageData.map((language) => (
-          <li className="flex">
+          <li className="flex" key={language}>
             <MdPlayArrow className="m-1.5" />
             {language}
           </li>
@@ -39,7 +39,7 @@ function FrameworksArr() {
     <div>
       <ul className="text-lg">
         {frameworksData.map((framework) => (
-          <li className="flex">
+          <li className="flex" key={framework}>
             <MdPlayArrow className="m-1.5" />
             {framework}
           </li>
@@ -53,7 +53,7 @@ function ToolsArr() {
     <div>
       <ul className="text-lg">
         {toolsData.map((tool) => (
-          <li className="flex">
+          <li className="flex" key={tool}>
             <MdPlayArrow className="m-1.5" />
             {tool}
           </li>
