@@ -10,7 +10,7 @@ export default function Home(props) {
                 typewriter.typeString("Hey there! I'm Madhavi.").start();
               }}
             /> */}
-            Hey there! I'm Madhavi.
+            Hey there! I&apos;m Madhavi.
           </div>
           <div className="flex justify-start font-bold md:text-3xl text-lg text-subText m-2 mt-4 w-64 md:w-96">
             A front-end developer and a tech enthusiast.
