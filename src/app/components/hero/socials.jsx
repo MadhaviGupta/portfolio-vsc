@@ -7,14 +7,14 @@ export default function Socials() {
           &#123; <br />
           <span className="ml-4">
             &quot;name&quot; :&quot;
-            <span className="text-mainText">Madhavi Gupta</span>&quot;,
+            <span className="text-subText">Madhavi Gupta</span>&quot;,
           </span>
           <br />
           <span className="ml-4">
             &quot;email&quot; : &quot;
             <a
               href="mailto:madhavigupta1225@gmail.com"
-              className="hover:underline text-mainText"
+              className="hover:underline text-subText"
             >
               madhavigupta1225@gmail.com
             </a>
@@ -29,7 +29,7 @@ export default function Socials() {
             &quot;github&quot; : &quot;
             <a
               href="https://www.github.com/MadhaviGupta"
-              className="hover:underline text-mainText"
+              className="hover:underline text-subText"
             >
               MadhaviGupta
             </a>
@@ -40,7 +40,7 @@ export default function Socials() {
             &quot;linkedin&quot; : &quot;
             <a
               href="https://www.linkedin.com/in/madhaviigupta/"
-              className="hover:underline text-mainText"
+              className="hover:underline text-subText"
             >
               madhaviigupta
             </a>
@@ -51,7 +51,7 @@ export default function Socials() {
             &quot;twitter&quot; : &quot;
             <a
               href="https://twitter.com/madhavi_gupta1"
-              className="hover:underline text-mainText"
+              className="hover:underline text-subText"
             >
               madhavi_gupta1
             </a>
@@ -62,7 +62,7 @@ export default function Socials() {
             &quot;instagram&quot; : &quot;
             <a
               href="https://www.instagram.com/madhaviigupta/"
-              className="hover:underline text-mainText"
+              className="hover:underline text-subText"
             >
               madhaviigupta
             </a>

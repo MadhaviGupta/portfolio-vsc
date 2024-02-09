@@ -16,7 +16,7 @@ export default function Explorer(props) {
             <ul className="text-sm mt-3 pl-3">
               <li
                 className={`flex my-2 p-0.5 hover:cursor-pointer ${
-                  props.content === "home" ? "bg-[#282f38] text-subtext" : ""
+                  props.content === "home" ? "bg-[#282f38] text-subText" : ""
                 }`}
                 onClick={() => props.setContent("home")}
               >
@@ -25,7 +25,7 @@ export default function Explorer(props) {
               </li>
               <li
                 className={`flex my-2 p-0.5 hover:cursor-pointer ${
-                  props.content === "about" ? "bg-[#282f38] text-subtext" : ""
+                  props.content === "about" ? "bg-[#282f38] text-subText" : ""
                 }`}
                 onClick={() => props.setContent("about")}
               >
@@ -34,7 +34,7 @@ export default function Explorer(props) {
               </li>
               <li
                 className={`flex my-2 p-0.5 hover:cursor-pointer ${
-                  props.content === "work" ? "bg-[#282f38] text-subtext" : ""
+                  props.content === "work" ? "bg-[#282f38] text-subText" : ""
                 }`}
                 onClick={() => props.setContent("work")}
               >
@@ -43,7 +43,7 @@ export default function Explorer(props) {
               </li>
               <li
                 className={`flex my-2 p-0.5 hover:cursor-pointer ${
-                  props.content === "socials" ? "bg-[#282f38] text-subtext" : ""
+                  props.content === "socials" ? "bg-[#282f38] text-subText" : ""
                 }`}
                 onClick={() => props.setContent("socials")}
               >
@@ -52,7 +52,7 @@ export default function Explorer(props) {
               </li>
               <li
                 className={`flex my-2 p-0.5 hover:cursor-pointer ${
-                  props.content === "contact" ? "bg-[#282f38] text-subtext" : ""
+                  props.content === "contact" ? "bg-[#282f38] text-subText" : ""
                 }`}
                 onClick={() => props.setContent("contact")}
               >

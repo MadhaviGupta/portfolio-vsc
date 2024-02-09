@@ -64,7 +64,7 @@ export default function Work() {
         {workContent.map((data) => (
           <div
             key={data.id}
-            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-subtext/20 transition-all duration-500 ease-in-out bg-opacity-90 rounded-lg min-w-min md:w-[28%] w-3/4 p-6 m-4"
+            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-subText/20 transition-all duration-500 ease-in-out bg-opacity-90 rounded-lg min-w-min md:w-[28%] w-3/4 p-6 m-4"
           >
             <div className="flex justify-center">
               <Image
@@ -79,7 +79,7 @@ export default function Work() {
               {data.name}
             </div>
             <hr className="border-1 w-full mb-2" />
-            <div className="tracking-wide text-sm mt-2 text-subtext">
+            <div className="tracking-wide text-sm mt-2 text-subText">
               {data.desc}
             </div>
             <ul className="my-4 text-md text-mainText flex flex-wrap justify-start">

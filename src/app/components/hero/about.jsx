@@ -1,7 +1,7 @@
 import Image from "next/image";
 import about from "../../../../public/images/about.png";
 import experience from "../../../../public/images/experience.png";
-import languages from "../../../../public/images/langauges.png";
+import languages from "../../../../public/images/languages.png";
 import frameworks from "../../../../public/images/frameworks.png";
 import tools from "../../../../public/images/tools.png";
 import { MdPlayArrow } from "react-icons/md";
@@ -104,7 +104,7 @@ export default function About() {
         {aboutContent.map((data) => (
           <div
             key={data.id}
-            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-subtext/20 transition-all duration-500 ease-in-out bg-opacity-90 rounded-lg min-w-min md:w-[28%] w-3/4 p-6 m-4"
+            className="flex flex-col bg-[#1a1c22] hover:shadow-lg hover:shadow-subText/20 transition-all duration-500 ease-in-out bg-opacity-90 rounded-lg min-w-min md:w-[28%] w-3/4 p-6 m-4"
           >
             <div className="flex justify-center">
               <Image
@@ -119,7 +119,7 @@ export default function About() {
               {data.name}
             </div>
             <hr className="border-1 w-full mb-2" />
-            <div className="tracking-wide text-sm mt-2 text-subtext">
+            <div className="tracking-wide text-sm mt-2 text-subText">
               {data.desc}
             </div>
           </div>

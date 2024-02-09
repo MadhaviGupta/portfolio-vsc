@@ -20,7 +20,7 @@ export default function Contact() {
             <input
               type="text"
               name="name"
-              className="rounded-md p-2 mb-2 w-full border-2 border-bgPrimary bg-bgPrimary focus:border-[#fa6c5f] outline-none"
+              className="rounded-md p-2 mb-2 w-full border-2 border-bgPrimary bg-bgPrimary focus:border-subText outline-none"
             />
             <label htmlFor="name" className="flex my-2">
               <AiOutlineMail className="m-1" />
@@ -29,7 +29,7 @@ export default function Contact() {
             <input
               type="email"
               name="email"
-              className="rounded-md p-2 mb-2 w-full border-2 border-bgPrimary bg-bgPrimary focus:border-[#fa6c5f] outline-none"
+              className="rounded-md p-2 mb-2 w-full border-2 border-bgPrimary bg-bgPrimary focus:border-subText outline-none"
             />
             <label htmlFor="name" className="flex my-2">
               <AiOutlineMessage className="m-1" />
@@ -38,13 +38,13 @@ export default function Contact() {
             <textarea
               rows={7}
               name="message"
-              className="rounded-md p-2 mb-2 w-full border-2 border-bgPrimary bg-bgPrimary focus:border-[#fa6c5f] outline-none"
+              className="rounded-md p-2 mb-2 w-full border-2 border-bgPrimary bg-bgPrimary focus:border-subText outline-none"
             />
           </div>
           <div className="flex justify-center m-3">
             <button
               type="submit"
-              className="flex border-2 text-sm md:text-md text-mainText border-[#ffffff] hover:text-subtext md:p-2 p-1.5 rounded-lg hover:shadow-lg hover:shadow-subtext/20 transition-all duration-500 ease-in-out"
+              className="flex border-2 text-sm md:text-md text-mainText border-subText hover:text-subText md:p-2 p-1.5 rounded-lg transition-all duration-500 ease-in-out"
             >
               Send Message
             </button>
